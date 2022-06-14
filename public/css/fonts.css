@@ -11,23 +11,64 @@ body {
 
 .main-header {
     background-color: #EAC926;
-    padding: 10px ;
+    padding: 15px ;
     margin: 0
 }
 .main-header-top-bar{
-    padding-left:0
+    padding-left:0;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo {
-    width: 50vw;
+    width: 45vw;
     text-align: left;
     margin: 0
 }
 
+form.search-bar{
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    width: 45vw;
+    height:10vw;
+}
+.search-bar fieldset{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    border: none;
+    outline: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-bar fieldset input{
+    border: none;
+    width: 80%;
+    padding-right: 0
+   
+}
+.search-bar fieldset button{
+    border: none;
+    background-color: white;
+    width: 15%;
+    color: #666;
+    font-size: 12px;
+    border-left: 0.1px solid #666;
+    padding:5px;
+    margin: auto
+       
+}
 .txt-header {
+
     font-weight: 500;
     text-align: center;
     font-size: 16px;
-    padding:5px
+    padding:5px;
+    margin:10px auto
 
 }
 
@@ -68,9 +109,46 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 10px
     }
     .logo{
         width: 200px;
+        padding-right:10px
+    }
+    form.search-bar{
+        background-color: white;
+        padding: 5px;
+        display: flex;
+        height:40px;
+        width: 35%
+    }
+    .search-bar fieldset{
+        width:100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+        border: none;
+        outline: none;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search-bar fieldset input{
+        border: none;
+    
+        padding-right: 0
+       
+    }
+    .search-bar fieldset button{
+        border: none;
+        background-color: white;
+        width: 15%;
+        color: #666;
+        font-size: 12px;
+        border-left: 0.1px solid #666;
+        padding-left:5px;
+        
+           
     }
     .txt-header {
         max-width: 250px;
@@ -102,6 +180,11 @@ body {
     }
     .logo{
         width: 250px;
+    }
+    form.search-bar{
+       
+        width: 32%;
+        
     }
     .txt-header {
         max-width: none;

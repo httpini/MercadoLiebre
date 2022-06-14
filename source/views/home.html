@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/tablet.css">
+   
 
 </head>
 <body>
@@ -20,6 +20,14 @@
             <figure>
                 <img src="/assets/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo">
             </figure>
+
+            <form action="/" method="get" class="search-bar">
+                
+                <fieldset>
+                <input type="text" name="search" id="searchBar" placeholder="Buscar productos, marcas y más">
+                <button><i class = "fa fa-search"></i></button>
+                </fieldset>
+            </form>
 
             <h2 class="txt-header"><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
         </div>
@@ -36,8 +44,8 @@
             </ul>
                     
             <ul class="right-navbar">
-                <li><a href="">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                <li><a href="">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
                 <li><a href="">Mis Compras <i class="fa-solid fa-basket-shopping"></i></a></li>
             </ul>   
         </nav>
