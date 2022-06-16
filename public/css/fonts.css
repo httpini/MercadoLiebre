@@ -331,7 +331,8 @@ article div {
         position:absolute;
         right: 15px;
         top: -25px;
-        transform: none
+        transform: none;
+        transition: transform 500ms
     }
     main section article div i:hover{
         transform: rotate(270deg)

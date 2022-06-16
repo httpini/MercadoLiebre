@@ -55,8 +55,8 @@
         <form action="/" method="post">
             <fieldset>
                 <legend>Información personal</legend>
-                <input type="text" name="name" id="name" placeholder="Nombre y apellido">                
-                <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                <input type="text" name="name" id="name" placeholder="Nombre y apellido" required>                
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
                 <input type="text" name="adress" id="adress" placeholder="Domicilio">
                 <label for="date">Fecha de Nacimiento</label>
                 <input type="date" name="date" id="date">
@@ -64,12 +64,12 @@
             <fieldset>
                 <legend>Información de la cuenta</legend>
 
-                <input type="text" name="userName" id="userName" placeholder="Nombre de usuario">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
-                <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmar contraseña">
+                <input type="text" name="userName" id="userName" placeholder="Nombre de usuario" required>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmar contraseña" required>
 
                 <label for="profileImage">Foto de Perfil</label>
-                <input type="file" name="profileImage" id="profileImage">
+                <input type="file" name="profileImage" id="profileImage" required>
 
                 <label>Tipo de Perfil</label>
                 <fieldset class="perfil-abuelo">
