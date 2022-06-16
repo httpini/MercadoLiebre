@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node source/index.js",
+    "test": "clear && node source/index.js",
     "start": "node source/index.js"
   },
   "keywords": [],
