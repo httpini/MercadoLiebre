@@ -75,7 +75,7 @@ form.search-bar{
 .burger-button{
     text-align: center;
     color: rgb(255,255,255);
-    background-color:#03264C;
+    background-color:#003f88;
     font-size: 16px;
     max-width: 50px;
     padding: 12px 0;
@@ -364,7 +364,7 @@ footer section{
 
 
 footer section i{
-    color:#1A2ABA;
+    color:#003f88;
     font-size: 2em;
     line-height:10px;
 }
@@ -412,5 +412,8 @@ footer section p{
     }
     footer p{
         flex-basis: 100vw
+    }
+    footer section p{
+        font-size:14px
     }
 }

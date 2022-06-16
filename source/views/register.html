@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/register.css">
     
 
 </head>
@@ -18,7 +19,7 @@
     <header class="main-header">
         <div class="main-header-top-bar">
             <figure>
-                <img src="/assets/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo">
+                <a href="/"><img src="/assets/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logo"></a>
             </figure>
 
             <form action="/" method="get" class="search-bar">
@@ -53,46 +54,61 @@
     <main>
         <form action="/" method="post">
             <fieldset>
-                <legend>Informacion Personal</legend>
+                <legend>Información personal</legend>
                 <input type="text" name="name" id="name" placeholder="Nombre y apellido">                
                 <input type="email" name="email" id="email" placeholder="Correo electrónico">
                 <input type="text" name="adress" id="adress" placeholder="Domicilio">
-                <label for="date"></label>Fecha de Nacimiento</label>
+                <label for="date">Fecha de Nacimiento</label>
                 <input type="date" name="date" id="date">
             </fieldset>
             <fieldset>
-                <legend>Perfil</legend>
+                <legend>Información de la cuenta</legend>
 
                 <input type="text" name="userName" id="userName" placeholder="Nombre de usuario">
-
-                <label for="profileImage">Foto de Perfil</label>
-                <input type="file" name="profileImage" id="profileImage"
-
-                <label>Tipo de Perfil</label>
-                <label for="c">Comprador</label>
-                <input type="radio" name="perfil" id="c" Value="Comprador">
-                <label for="c">Vendedor</label>
-                <input type="radio" name="perfil" id="v" Value="Vendedor">
-
-                <label>Intereses</label>
-                <label for="electro">Electro</label>
-                <input type="checkbox" name="intereses" id="electro">
-                <label for="moda">Moda</label>
-                <input type="checkbox" name="intereses" id="moda">
-                <label for="hogar">Hogar</label>
-                <input type="checkbox" name="intereses" id="hogar">
-                <label for="toys">Juguetería</label>
-                <input type="checkbox" name="intereses" id="toys">
-                <label for="vidaSana">Vida Sana</label>
-                <input type="checkbox" name="intereses" id="vidaSana">
-
                 <input type="password" name="password" id="password" placeholder="Contraseña">
-
                 <input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmar contraseña">
 
+                <label for="profileImage">Foto de Perfil</label>
+                <input type="file" name="profileImage" id="profileImage">
+
+                <label>Tipo de Perfil</label>
+                <fieldset class="perfil-abuelo">
+                    <div class="perfil-padre">
+                        <label for="c" class="perfil">Comprador</label>
+                        <input class="perfil" type="radio" name="perfil" id="c" Value="Comprador">
+                    </div>
+                    <div class="perfil-padre">
+                        <label for="v" class="perfil">Vendedor</label>
+                        <input class="perfil" type="radio" name="perfil" id="v" Value="Vendedor">
+                    </div> 
+                </fieldset>
+                   
+
+                <label>Intereses</label>
+                <fieldset class="intereses">
+                    <div>
+                        <label for="electro">Electro</label>
+                        <input type="checkbox" name="intereses" id="electro">
+                    </div>
+                    <div><label for="moda">Moda</label>
+                        <input type="checkbox" name="intereses" id="moda">
+                    </div>
+                    <div><label for="hogar">Hogar</label>
+                        <input type="checkbox" name="intereses" id="hogar">
+                    </div>
+                    <div><label for="toys">Juguetería</label>
+                        <input type="checkbox" name="intereses" id="toys">
+                    </div>
+                    <div><label for="vidaSana">Vida Sana</label>
+                        <input type="checkbox" name="intereses" id="vidaSana">
+                    </div>
+                </fieldset>
             </fieldset>
-            <button type="submit">Enviar</button>
-            <button type="reset">Borrar contenido</button>
+            <fieldset class="buttons">
+                <button class="but-a" type="submit">Enviar</button>
+                <button class="but-b" type="reset">Borrar contenido</button>
+            </fieldset>
+            
         </form>
         
     </main>

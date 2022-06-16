@@ -1,18 +1,126 @@
 
 
+main{
+    display: block;
+    background-color:  #ebebeb
+}
+main form {
+    display:block;
+    padding:10px 0;
+    width: 95vw;
+    margin: auto
+}
+main form fieldset{
+    display:block;
+    border: none;
+    padding: 0px 20px 20px 20px
+}
+main form fieldset input{
+    display:block;
+    border: none;
+    margin:10px auto;
+    padding:5px;
+    width:100%
+}
+main form fieldset legend{
+    display:block;
+    font-size: 20px;
+    font-weight: 600
+    
+}
+main form fieldset label{
+    display:block;
+    font-size: 17px;
+    font-weight:450
+}
 
 
+.perfil-abuelo{
+    display:flex;
+    justify-content:flex-start;
+    padding:5px 0;
+    gap:30px   
+}
 
 
+.perfil-padre{
+    
+    display: flex;
+    align-items: center;
+}
+.perfil-padre label{
+   
+    font-size: 14px;
+    font-weight: 250;
+    padding-right: 7px
+}
+.perfil-padre input{
+    width: 20px;
+    padding: 0;
+    margin: 0
+}
+.intereses{
+    display: flex;
+    flex-direction: column;
+    padding:0
+}
+.intereses div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0
+}
+
+.intereses div label{
+    width:65px;
+    font-size: 14px;
+    font-weight: 250
+}
+.intereses div input{
+    width:20%;
+    margin:0
+}
 
 
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:20px
+}
+
+.buttons button{
+    padding: 10px;
+    font-size: 16px;
+
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #003f88
+}
 
 
+@media(min-width:1024px){
+    main form {
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        gap: 10px 50px;
+        width: 95vw;
+        margin: auto;
+        position: relative
+
+}
+main form fieldset{
+    width: 300px;
+    padding:0
+}
+fieldset.buttons{
+    width: 100%
+}
 
 
-
-
-
+}
 
 
 
