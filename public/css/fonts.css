@@ -302,6 +302,10 @@ article div {
 }
 
 @media (min-width: 1024px){
+
+    section{
+        align-items: flex-start
+    }
     article{
         flex-basis:25%;
         flex-grow: 1;
@@ -309,6 +313,7 @@ article div {
         max-width: 20vw;
         box-shadow: none;
         transition: box-shadow 500ms;
+        height: auto
     }
     article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -345,7 +350,7 @@ article div {
     }
 
     article:hover .nombre-producto{
-        display:block
+        display:flex
     }
     .precio{
         font-size:24px;
